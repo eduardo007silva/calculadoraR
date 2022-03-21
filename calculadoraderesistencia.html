@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css" >
+    <title>Calculadora de reistor</title>
+</head>
+<body>
+    <header>
+        <center>
+            <h1>Calculadora de Resistor</h1>
+        </center>
+    </header>
+    <center>
+        <div>
+            <legend>Quantidades de faixas:</legend>
+            <input type="radio" name="fx" id="fx04" onclick="selectFX()">
+            <label for="fx04">4 faixas</label>
+            <input type="radio" name="fx" id="fx05" onclick="selectFX()">
+            <label for="fx05">5 faixas</label>
+        </div>
+    </center>
+    <form>
+        <fieldset class="faixas"><label for="">1º Faixa:</label> 
+            <select id="fx01">
+                <option value="0">preto</option>
+                <option value="1">marrom</option>
+                <option value="2">vermelho</option>
+                <option value="3">laranja</option>
+                <option value="4">amarelo</option>
+                <option value="5">verde</option>
+                <option value="6">azul</option>
+                <option value="7">violeta</option>
+                <option value="8">cinza</option>
+                <option value="9">branco</option>
+            </select>
+        </fieldset>
+        <fieldset class="faixas"><label for="">2º Faixa:</label> 
+            <select id="fx02">
+                <option value="0">preto</option>
+                <option value="1">marrom</option>
+                <option value="2">vermelho</option>
+                <option value="3">laranja</option>
+                <option value="4">amarelo</option>
+                <option value="5">verde</option>
+                <option value="6">azul</option>
+                <option value="7">violeta</option>
+                <option value="8">cinza</option>
+                <option value="9">branco</option>
+            </select>
+        </fieldset>
+        <fieldset class="terFX" id="terFX"><label>3º Faixa:</label> 
+            <select id="fx03">
+                <option value="0">preto</option>
+                <option value="1">marrom</option>
+                <option value="2">vermelho</option>
+                <option value="3">laranja</option>
+                <option value="4">amarelo</option>
+                <option value="5">verde</option>
+                <option value="6">azul</option>
+                <option value="7">violeta</option>
+                <option value="8">cinza</option>
+                <option value="9">branco</option>
+            </select>
+        </fieldset>
+        <fieldset class="faixas"><label for="">Multiplicador:</label> 
+            <select id="mult">
+                <option value="1">preto</option>
+                <option value="10">marrom</option>
+                <option value="100">vermelho</option>
+                <option value="1000">laranja</option>
+                <option value="10000">amarelo</option>
+                <option value="100000">verde</option>
+                <option value="1000000">azul</option>
+                <option value="10000000">violeta</option>
+                <option value="100000000">cinza</option>
+                <option value="1000000000">branco</option>
+                <option value="0.1">dourado</option>
+                <option value="0.01"></option>
+            </select>
+        </fieldset>
+        <fieldset class="faixas"><label for="">Tolerancia:</label> 
+            <select id="tlr" onchange="catchData()">
+                <option value="±1%">marrom</option>
+                <option value="±2%">vermelho</option>
+                <option value="±0.5%">verde</option>
+                <option value="±0.25%">azul</option>
+                <option value="±0.1%">violeta</option>
+                <option value="±0.05%">cinza</option>
+                <option value="±5%">dourado</option>
+                <option value="±10%">prata</option>
+            </select>
+        </fieldset>
+        <fieldset class="faixas">
+        <label>Resultado:</label>
+        <div type="text" id="resul" readonly></div>
+        </fieldset>
+    </form>
+    <center>
+        <h3>Tabela:</h3>
+        <img src="C:\Users\2° Ano Info\Downloads\download.png">
+    <script src="scriptcalc.js"></script>
+    </center>
+</body>
+</html>
